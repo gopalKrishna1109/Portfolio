@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Spotify - Web Player : Music for everyone</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="./assets/spotify.svg">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="main">
+
+        <div class="sidebar">
+            
+            <div class="sidebar-nav">
+                <div class="spotify-home-search">
+                    <div class="spotify">
+                        <i class="fa-brands fa-spotify fa-lg" style="color: #ffffff;"></i>
+                        <span>Spotify</span>
+                    </div>
+                    <div class="home">
+                        <i class="fa-solid fa-house fa-lg" style="color: #ffffff;"></i>
+                        <span>Home</span>
+                    </div>
+                    <div class="search">
+                        <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #ffffff;"></i>
+                        <span>Search</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-playlist">
+                <div class="sticky-playlist-bar">
+                    <div class="library">
+                        <div class="left">
+                            <i class="fa-solid fa-bookmark fa-lg" style="color: #fcfcfc;"></i>
+                            <h4>Your Library</h4>
+                        </div>
+                        <div class="right">
+                            <i class="fa-solid fa-plus fa-lg" style="color: #fcfcfc;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-content">
+                    <div class="create-playlist">
+                        <div class="items head"><p>Create your first playlist</p></div>
+                        <div class="items para"><p>It's easy, we'll help you</p></div>
+                        <div class="items"><button type="button" class="btn">Create playlist</button></div>
+                    </div>
+                    <div class="browse-podcast">
+                        <div class="items head"><p>Let's find some podcasts to follow</p></div>
+                        <div class="items para"><p>We'll keep you updated on new episodes</p></div>
+                        <div class="items"><button type="button" class="btn">Browse podcasts</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="main-bar">
+
+            <div class="sticky-bar">
+
+                <!-- For Mobile -->
+                <div class="spotify-mobile">
+                    <i class="fa-brands fa-spotify fa-lg" style="color: #ffffff;"></i>
+                    <span>Spotify</span>
+                </div>
+                <div class="options">
+                    <i class="fa-solid fa-bars fa-lg" style="color: #ffffff;"></i>
+                </div>
+
+                <!-- For tabs and monitor screens -->
+                <div class="page-navigators">
+                    <div class="page-left">
+                        <i class="fa-solid fa-angle-left" style="color: white;"></i>
+                    </div>
+                    <div class="page-right">
+                        <i class="fa-solid fa-angle-right" style="color: white;"></i>
+                    </div>
+                </div>
+                <div class="account">
+                    <a class="signup" href="#">Sign Up</a>
+                    <a class="login" href="#">Log in</a>
+                </div>
+            </div>
+
+            <div class="heading">
+                <a class="sub-heading" href="#">Popular artists</a>
+                <a class="show-all-option" href="#">Show all</a>
+            </div>
+            <div class="content">
+                <div class="popular-artists">
+                    <div class="cards">
+                        <a href="#">
+                            <div class="card">
+                                <img src="./assets/TaylorSwift.jpeg" alt="Taylor Swift">
+                                <button class="play-button">
+                                    <i class="fa-sharp fa-solid fa-play fa-xl" style="color: #000000;"></i>
+                                </button>
+                                <div class="description">
+                                    <p class="name">Taylor Swift</p>
+                                    <p class="profession">Artist</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="card">
+                                <img src="./assets/TheWeeknd.jpeg" alt="The Weeknd">
+                                <button class="play-button">
+                                    <i class="fa-sharp fa-solid fa-play fa-xl" style="color: #000000;"></i>
+                                </button>
+                                <div class="description">
+                                    <p class="name">The Weeknd</p>
+                                    <p class="profession">Artist</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="card">
+                                <img src="./assets/PostMalone.jpg" alt="Post Malone">
+                                <button class="play-button">
+                                    <i class="fa-sharp fa-solid fa-play fa-xl" style="color: #000000;"></i>
+                                </button>
+                                <div class="description">
+                                    <p class="name">Post Malone</p>
+                                    <p class="profession">Artist</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="card">
+                                <img src="./assets/ArianaGrande.jpeg" alt="Ariana Grande">
+                                <button class="play-button">
+                                    <i class="fa-sharp fa-solid fa-play fa-xl" style="color: #000000;"></i>
+                                </button>
+                                <div class="description">
+                                    <p class="name">Ariana Grande</p>
+                                    <p class="profession">Artist</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="card">
+                                <img src="./assets/Rihanna.jpg" alt="Rihanna">
+                                <button class="play-button">
+                                    <i class="fa-sharp fa-solid fa-play fa-xl" style="color: #000000;"></i>
+                                </button>
+                                <div class="description">
+                                    <p class="name">Rihanna</p>
+                                    <p class="profession">Artist</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="card">
+                                <img src="./assets/Beyonce.jpeg" alt="Beyonce">
+                                <button class="play-button">
+                                    <i class="fa-sharp fa-solid fa-play fa-xl" style="color: #000000;"></i>
+                                </button>
+                                <div class="description">
+                                    <p class="name">Beyonce</p>
+                                    <p class="profession">Artist</p>
+                                </div>
+                            </div>
+                        </a>   
+                        <a href="#">
+                            <div class="card">
+                                <img src="./assets/Drake.jpeg" alt="Drake">
+                                <button class="play-button">
+                                    <i class="fa-sharp fa-solid fa-play fa-xl" style="color: #000000;"></i>
+                                </button>
+                                <div class="description">
+                                    <p class="name">Drake</p>
+                                    <p class="profession">Artist</p>
+                                </div>
+                            </div>
+                        </a>   
+                        <a href="#">
+                            <div class="card">
+                                <img src="./assets/Eminem.jpeg" alt="Eminem">
+                                <button class="play-button">
+                                    <i class="fa-sharp fa-solid fa-play fa-xl" style="color: #000000;"></i>
+                                </button>
+                                <div class="description">
+                                    <p class="name">Eminem</p>
+                                    <p class="profession">Artist</p>
+                                </div>
+                            </div>
+                        </a>   
+                        <a href="#">
+                            <div class="card">
+                                <img src="./assets/KanyeWest.jpeg" alt="Kanye West">
+                                <button class="play-button">
+                                    <i class="fa-sharp fa-solid fa-play fa-xl" style="color: #000000;"></i>
+                                </button>
+                                <div class="description">
+                                    <p class="name">Kanye West</p>
+                                    <p class="profession">Artist</p>
+                                </div>
+                            </div>
+                        </a>   
+                        <a href="#">
+                            <div class="card">
+                                <img src="./assets/TravisScott.jpeg" alt="Travis Scott">
+                                <button class="play-button">
+                                    <i class="fa-sharp fa-solid fa-play fa-xl" style="color: #000000;"></i>
+                                </button>
+                                <div class="description">
+                                    <p class="name">Travis Scott</p>
+                                    <p class="profession">Artist</p>
+                                </div>
+                            </div>
+                        </a>   
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="heading">
+                    <a class="sub-heading" href="#">Popular albums</a>
+                    <a class="show-all-option" href="#">Show all</a>
+                </div>
+                <div class="content">
+                    <div class="popular-albums">
+                        <div class="cards">
+                            <a href="#">
+                                <div class="card">
+                                    <img src="./assets/Albums/After_Hours_The_Weeknd.jpeg" alt="">
+                                    <button class="play-button">
+                                        <i class="fa-sharp fa-solid fa-play fa-xl" style="color: #000000;"></i>
+                                    </button>
+                                    <div class="description">
+                                        <p class="name">After Hours</p>
+                                        <p class="profession">The Weeknd</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="card">
+                                    <img src="./assets/Albums/Beauty_Behind_The_Madness_The_Weeknd.jpeg" alt="">
+                                    <button class="play-button">
+                                        <i class="fa-sharp fa-solid fa-play fa-xl" style="color: #000000;"></i>
+                                    </button>
+                                    <div class="description">
+                                        <p class="name">Beauty Behind The Madness</p>
+                                        <p class="profession">The Weeknd</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="card">
+                                    <img src="./assets/Albums/Beerbongs_&_Bentleys_Post_Malone.jpeg" alt="">
+                                    <button class="play-button">
+                                        <i class="fa-sharp fa-solid fa-play fa-xl" style="color: #000000;"></i>
+                                    </button>
+                                    <div class="description">
+                                        <p class="name">Beerbongs & Bentleys</p>
+                                        <p class="profession">Post Malone</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="card">
+                                    <img src="./assets/Albums/Divide_Ed_Sheeran.jpeg" alt="">
+                                    <button class="play-button">
+                                        <i class="fa-sharp fa-solid fa-play fa-xl" style="color: #000000;"></i>
+                                    </button>
+                                    <div class="description">
+                                        <p class="name">Divide</p>
+                                        <p class="profession">Ed Sheeran</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="card">
+                                    <img src="./assets/Albums/Future_Nostalgia_Dua_Lipa.jpeg" alt="">
+                                    <button class="play-button">
+                                        <i class="fa-sharp fa-solid fa-play fa-xl" style="color: #000000;"></i>
+                                    </button>
+                                    <div class="description">
+                                        <p class="name">Future Nostalgia</p>
+                                        <p class="profession">Dua Lipa</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="card">
+                                    <img src="./assets/Albums/Hollywood's_Bleeding_Post_Malone.jpeg" alt="">
+                                    <button class="play-button">
+                                        <i class="fa-sharp fa-solid fa-play fa-xl" style="color: #000000;"></i>
+                                    </button>
+                                    <div class="description">
+                                        <p class="name">Hollywood's Bleeding</p>
+                                        <p class="profession">Post Malone</p>
+                                    </div>
+                                </div>
+                            </a>   
+                            <a href="#">
+                                <div class="card">
+                                    <img src="./assets/Albums/Lover_Taylor_Swift.jpeg" alt="">
+                                    <button class="play-button">
+                                        <i class="fa-sharp fa-solid fa-play fa-xl" style="color: #000000;"></i>
+                                    </button>
+                                    <div class="description">
+                                        <p class="name">Lover</p>
+                                        <p class="profession">Taylor Swift</p>
+                                    </div>
+                                </div>
+                            </a>   
+                            <a href="#">
+                                <div class="card">
+                                    <img src="./assets/Albums/Scorpion_Drake.jpeg" alt="">
+                                    <button class="play-button">
+                                        <i class="fa-sharp fa-solid fa-play fa-xl" style="color: #000000;"></i>
+                                    </button>
+                                    <div class="description">
+                                        <p class="name">Scorpion</p>
+                                        <p class="profession">Drake</p>
+                                    </div>
+                                </div>
+                            </a>   
+                            <a href="#">
+                                <div class="card">
+                                    <img src="./assets/Albums/Starboy_The_Weeknd.jpg" alt="">
+                                    <button class="play-button">
+                                        <i class="fa-sharp fa-solid fa-play fa-xl" style="color: #000000;"></i>
+                                    </button>
+                                    <div class="description">
+                                        <p class="name">Starboy</p>
+                                        <p class="profession">The Weeknd</p>
+                                    </div>
+                                </div>
+                            </a>   
+                            <a href="#">
+                                <div class="card">
+                                    <img src="./assets/Albums/When_We_All_Fall_Asleep,_Where_Do_We_Go_Billie_Eilish.jpeg" alt="">
+                                    <button class="play-button">
+                                        <i class="fa-sharp fa-solid fa-play fa-xl" style="color: #000000;"></i>
+                                    </button>
+                                    <div class="description">
+                                        <p class="name">When We All Fall Asleep, Where Do We Go?</p>
+                                        <p class="profession">Billie Eilish</p>
+                                    </div>
+                                </div>
+                            </a>   
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="heading">
+                        <a class="sub-heading" href="#">Popular radios</a>
+                        <a class="show-all-option" href="#">Show all</a>
+                    </div>
+                    <div class="content">
+                        <div class="popular-radios">
+                            <div class="cards">
+                                <a href="#">
+                                    <div class="card">
+                                        <img src="./assets/Radios/Chris_Stapleton.jpeg" alt="">
+                                        <button class="play-button">
+                                            <i class="fa-sharp fa-solid fa-play fa-xl" style="color: #000000;"></i>
+                                        </button>
+                                        <div class="description">
+                                            <p class="name">Chris Stapleton</p>
+                                            <p class="profession">& others</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="card">
+                                        <img src="./assets/Radios/Fleetwood_Mac.jpeg" alt="">
+                                        <button class="play-button">
+                                            <i class="fa-sharp fa-solid fa-play fa-xl" style="color: #000000;"></i>
+                                        </button>
+                                        <div class="description">
+                                            <p class="name">Fleetwood Mac</p>
+                                            <p class="profession">& others</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="card">
+                                        <img src="./assets/Radios/Hozier.jpeg" alt="">
+                                        <button class="play-button">
+                                            <i class="fa-sharp fa-solid fa-play fa-xl" style="color: #000000;"></i>
+                                        </button>
+                                        <div class="description">
+                                            <p class="name">Hozier</p>
+                                            <p class="profession">& others</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="card">
+                                        <img src="./assets/Radios/Luke_Combs.jpeg" alt="">
+                                        <button class="play-button">
+                                            <i class="fa-sharp fa-solid fa-play fa-xl" style="color: #000000;"></i>
+                                        </button>
+                                        <div class="description">
+                                            <p class="name">Luke Combs</p>
+                                            <p class="profession">& others</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="card">
+                                        <img src="./assets/Radios/Morgan_Wallen.jpeg" alt="">
+                                        <button class="play-button">
+                                            <i class="fa-sharp fa-solid fa-play fa-xl" style="color: #000000;"></i>
+                                        </button>
+                                        <div class="description">
+                                            <p class="name">Morgan Wallen</p>
+                                            <p class="profession">& others</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="card">
+                                        <img src="./assets/Radios/Noah_Kahan.jpeg" alt="">
+                                        <button class="play-button">
+                                            <i class="fa-sharp fa-solid fa-play fa-xl" style="color: #000000;"></i>
+                                        </button>
+                                        <div class="description">
+                                            <p class="name">Noah Kahan</p>
+                                            <p class="profession">& others</p>
+                                        </div>
+                                    </div>
+                                </a>   
+                                <a href="#">
+                                    <div class="card">
+                                        <img src="./assets/Radios/Post_Malone.jpeg" alt="">
+                                        <button class="play-button">
+                                            <i class="fa-sharp fa-solid fa-play fa-xl" style="color: #000000;"></i>
+                                        </button>
+                                        <div class="description">
+                                            <p class="name">Post Malone</p>
+                                            <p class="profession">& others</p>
+                                        </div>
+                                    </div>
+                                </a>   
+                                <a href="#">
+                                    <div class="card">
+                                        <img src="./assets/Radios/Taylor_Swift.jpeg" alt="">
+                                        <button class="play-button">
+                                            <i class="fa-sharp fa-solid fa-play fa-xl" style="color: #000000;"></i>
+                                        </button>
+                                        <div class="description">
+                                            <p class="name">Taylor Swift</p>
+                                            <p class="profession">& others</p>
+                                        </div>
+                                    </div>
+                                </a>   
+                                <a href="#">
+                                    <div class="card">
+                                        <img src="./assets/Radios/Tyler_Childers.jpeg" alt="">
+                                        <button class="play-button">
+                                            <i class="fa-sharp fa-solid fa-play fa-xl" style="color: #000000;"></i>
+                                        </button>
+                                        <div class="description">
+                                            <p class="name">Tyler Childers</p>
+                                            <p class="profession">& others</p>
+                                        </div>
+                                    </div>
+                                </a>   
+                                <a href="#">
+                                    <div class="card">
+                                        <img src="./assets/Radios/Zach_Bryan.jpeg" alt="">
+                                        <button class="play-button">
+                                            <i class="fa-sharp fa-solid fa-play fa-xl" style="color: #000000;"></i>
+                                        </button>
+                                        <div class="description">
+                                            <p class="name">Zach Bryan</p>
+                                            <p class="profession">& others</p>
+                                        </div>
+                                    </div>
+                                </a>   
+                            </div>
+                        </div>
+
+                <br><br><br>
+
+                <div class="footer">
+
+                    <div class="company">
+                        <h4>Company</h4><br>
+                        <ul class="list">
+                            <a href="#"><li>About</li></a>
+                            <a href="#"><li>Jobs</li></a>
+                            <a href="#"><li>For the Record</li></a>
+                        </ul>
+                    </div>
+
+                    <div class="communities">
+                        <h4>Communities</h4><br>
+                        <ul class="list">
+                            <a href="#"><li>For Artists</li></a>
+                            <a href="#"><li>Developers</li></a>
+                            <a href="#"><li>Advertising</li></a>
+                            <a href="#"><li>Investers</li></a>
+                            <a href="#"><li>Vendors</li></a>
+                        </ul>
+                    </div>
+
+                    <div class="links">
+                        <h4>Useful links</h4><br>
+                        <ul class="list">
+                            <a href="#"><li>Support</li></a>
+                            <a href="#"><li>Free Mobile App</li></a>
+                        </ul>
+                    </div>
+
+                    <div class="plans">
+                        <h4>Spotify Plans</h4><br>
+                        <ul class="list">
+                            <a href="#"><li>Premium Individual</li></a>
+                            <a href="#"><li>Premium Duo</li></a>
+                            <a href="#"><li>Premium Family</li></a>
+                            <a href="#"><li>Premium Student</li></a>
+                            <a href="#"><li>Spotify Free</li></a>
+                        </ul>
+                    </div>
+
+                    <div class="social-media">
+                        <div class="insta social">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div class="twitter social">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </div>
+                        <div class="meta social">
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="footer-line">
+                    <div class="line">
+                        <br><br><p>@ 2024 spotify AB</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    
+        <div class="music-player">
+            
+        </div>
+
+    </div>
+
+</body>
+</html>
