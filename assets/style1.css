@@ -1,0 +1,63 @@
+.certifications-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.certification-card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.certification-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.certification-image:hover {
+    transform: scale(1.25);
+}
+
+.certification-details {
+    padding: 15px;
+}
+
+.certification-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.certification-description {
+    margin-bottom: 10px;
+}
+
+.details-dropdown {
+    margin-top: 10px;
+}
+
+.details-button {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.details-content {
+    display: none;
+    margin-top: 10px;
+}
+
+.details-content p {
+    margin: 5px 0;
+}
