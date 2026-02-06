@@ -861,7 +861,7 @@ a:hover {
 
 .certification-card {
   height: fit-content;
-  width: 300px;
+  width: 250px;
   border: 1px solid #ccc;
   border-radius: 8px;
   /* overflow: hidden; */
@@ -871,21 +871,23 @@ a:hover {
 
 .certification-image {
   width: 100%;
-  height: 150px;
+  height: 120px;
   display: block;
   cursor: pointer;
 }
 
 .certification-details {
-  padding: 15px;
+  padding: 5px;
 }
 
 .certification-title {
+  font-size: medium;
   font-weight: bold;
   margin-bottom: 5px;
 }
 
 .certification-description {
+  font-size: small;
   margin-bottom: 10px;
 }
 
@@ -965,6 +967,10 @@ a:hover {
   font-size: 1.2rem;
 }
 
-
+.skill-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
 
 
